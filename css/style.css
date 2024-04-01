@@ -30,16 +30,158 @@ a {
     text-decoration: none;
 }
 
+/****** Header ***********/
 .section-title {
     margin: 0;
     font-size: 22px;
 }
+.booki {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+       
+}
+.logo {
+    width: 4%;
+}
+.navbar {
+    display: flex;
+    gap: 5em;
+    
+    
+}
 
+.logement, .activites {
+    position: relative;
+}
+
+  .logement:hover::before,
+.activites:hover::before {
+    content: '';
+    position: absolute;
+    top: -10px; 
+    left: 0;
+    width: 100%; 
+    height: 3px; 
+    background-color: #0065FC; 
+    display: block;
+}
+.logement:hover,
+.activites:hover {
+  color: #0065FC; 
+}
+
+/****** Barre De Recherche Et Filtres ***********/
+#searchForm {
+    margin-left: 7px;   
+}
+
+#searchForm h1 {
+    margin-bottom: 5px;
+    font-size: 19px;
+}
+#searchForm p {
+    font-size: 13px;
+    margin-bottom: 20px;
+   
+}
+
+.map-icon {
+    padding: 12px;
+    border-radius: 9px 0 0 9px;
+    background-color: #F2F2F2;
+    display: inline-block;
+    width: 1%;
+    font-size: 13px;
+    text-align: center; 
+}
+
+#city {
+   width: 11.5%; 
+   border: none;
+   text-align: center;
+}
+
+#searchForm button {
+    padding: 8px 18px;
+    border-radius: 0 9px 9px 0;
+    border: none;
+    background-color: #0065FC; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+
+.result {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+    
+}
+
+.hidden-desktop {
+    display: none;
+}
+
+.filter {
+    display: flex;
+    align-items: center; 
+    padding: 10px; 
+    
+  }
+  .filter span {
+    font-weight: bold;
+    margin-right: 7px;
+  }
+  .filter i {
+    margin-right: 10px; 
+    font-size: 15px;
+  }
+
+  .filter button {
+    padding: 10px 20px;
+    margin: 7px; 
+    background-color: white;
+    cursor: pointer; 
+    border-radius: 20px;
+    border: 1px solid grey;
+    font-weight: bold;
+  }
+  
+  .filter button:hover {
+    background-color: #DEEBFF;
+  }
+
+  .info p {
+    font-size: 15px;
+  }
+  
+  
+.info .fa-info {
+    display: inline-block;
+    color: #0065FC;
+    border: 1px solid #d9d9d9;
+    font-size: 9px;
+    width: 4px;
+    height:5px;
+    border-radius: 50%;
+    padding: 3px 6px 9px 7px;
+    margin-right: 10px;
+    margin-left: 7px;
+}
+
+
+
+/****** Les plus populaires ***********/
 .card {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    
 }
 
 .card img {
@@ -58,6 +200,7 @@ a {
     color: var(--main-bg-color)
 }
 
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -74,7 +217,56 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
 }
+.hebergements h2 {
+    margin-bottom: 15px;
+}
+
+#hebergements {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;  
+    row-gap: 10px;   
+}
+
+.card-link {
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    width: 31%;
+    min-width: 120px;
+    margin-top: 20px;
+    
+  }
+
+  .card-link img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    height: 115px;
+  }
+  
+  .card-content-hotel{
+    padding: 16px;
+  }
+  
+  .card-title-hotel {
+    margin: 0;
+    font-size: 15px;
+    margin-top: -15px;
+  }
+  
+  .card-subtitle-hotel {
+    margin: 0;
+    font-size: 13px;
+    line-height: 2.3;
+  }
+  
+  .card-rating .neutral-star {
+    color: #E0E0E0; 
+  }
 
 /****** Populaires ***********/
 .populaires {
@@ -121,6 +313,20 @@ a {
     margin-bottom: 5px;
 }
 
+.marseille img {
+    
+    height: 50%;
+    
+    
+}
+ 
+
+
+#marseille-list {
+    display: flex;
+    flex-direction: row;
+    width: 20%;   
+}
 
 
 
@@ -164,4 +370,10 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    .hidden-desktop {
+        display: flex;
+    }
+    .hidden-mobile {
+        display: none;
+    }
 }
