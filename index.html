@@ -15,19 +15,20 @@
 </head>
 
 <body>
+    <!--HEADER-->
     <div class="main-container">
         <header class="booki">
             <img src="images/logo/Booki.png" class="logo" alt="logo de Booki">
             <nav class="navbar">
                 
-                <a href="" class="logement">Hébergements</a>
-                <a href="" class="activites">Activités</a>
+                <a href="#hebergement" class="logement">Hébergements</a>
+                <a href="#activite-marseille" class="activites">Activités</a>
                 
                 </nav>
         </header>
         <main>
             
-            
+            <!--RECHERCHE ET FILTRES-->
             <form action="/recherche" method="get" id="searchForm">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
@@ -55,7 +56,7 @@
             <!--HEBERGEMENT A MARSEILLE-->
    
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section class="hebergements" id="hebergement">
                     <h2 class="section-title">Hébergements à Marseille</h2>
                     
                     <div id="hebergements">  
@@ -190,9 +191,9 @@
                                                 </article>
                                             </a>
                                             </div>
-                                            <br>
-                                            <br>
-                                            <h3 class="text-fin-fred"><a href="#">Afficher plus</a></h3>
+                                        
+                                            
+                                            <h4 class="text-fin-fred"><a href="#">Afficher plus</a></h4>
                 </section>
 
                 <!--LES POPULAIRES-->
@@ -265,11 +266,11 @@
 
             <!--ACTIVITE A MARSEILLE-->
 
-                <section class="marseille-activites">
+                <section class="marseille-activites" id="activite-marseille"> 
                     <h2>Activités à Marseille</h2>
                     
                     <div id="marseille-list">  
-                        <div class="marseille-card">
+                        <div class="card">
                     
                     <a href="#">
                         <article class="marseille">
@@ -280,7 +281,8 @@
                             </article>
                         </a>
                     </div>
-                    <div class="marseille-card">
+                    
+                    <div class="card">
                     
                         <a href="#">
                             <article class="marseille">
@@ -291,7 +293,7 @@
                                 </article>
                             </a>
                         </div>
-                        <div class="marseille-card">
+                        <div class="card">
                     
                             <a href="#">
                                 <article class="marseille">
@@ -302,7 +304,7 @@
                                     </article>
                                 </a>
                             </div>
-                            <div class="marseille-card">
+                            <div class="card">
                     
                                 <a href="#">
                                     <article class="marseille">
@@ -317,9 +319,42 @@
                     </section>
             
 
-
+            
         </main>
-        <footer></footer>
+
+        <!--FOOTER-->
+        
+        <footer>
+            <section class="footer-container">
+            <div class="a-propos">
+            <h5>À Propos</h5>
+            <ul>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales</a></li>
+                <li><a href="#">Données et confidentialité</a></li>
+            </ul>
+            </div>
+        </section>
+            <section class="footer-container">
+            <div class="nos-hebergements">
+            <h5>Nos hébergements</h5>
+            <ul>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Proposer votre hôtel</a></li>
+            </ul>
+            </div>
+            </section>
+            <section class="footer-container">
+            <div class="assistance">
+            <h5>Assistance</h5>
+            <ul>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
+            </ul>
+            </div>
+            </section>
+        
+        </footer>
     </div>
 </body>
 
