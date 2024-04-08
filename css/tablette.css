@@ -1,0 +1,128 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    * {
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    :root {
+        --main-color: #0065FC;
+        --main-bg-color: #F2F2F2;
+        --filter-bg-color: #DEEBFF;
+    }
+    
+    .fa-solid {
+        color: var(--main-color);
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .main-container {
+        width: 100%;
+        max-width: 1024px;
+        min-width: 768px;
+        padding: 0 50px;
+        box-sizing: border-box;
+    }
+
+     /****** RECHERCHE ET FILTRES TABLETTE ***********/
+
+     #searchForm .result {
+        width: 100%;
+        margin-right: 20px;
+        margin-top: 40px;
+    }
+    
+    #searchForm .result #city {
+        width: 20%;
+        border-right: none;
+    } 
+
+    #city {
+        border-top: 1px solid var(--main-bg-color);
+        border-bottom: 1px solid var(--main-bg-color);
+    }
+
+    .map-icon {
+        padding: 14px 16px;
+     }
+
+    .filter {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;   
+    }
+
+    .filter span {
+        display: block;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    .info .fa-info {
+        font-size: 11px; /* Ajustez la taille selon vos besoins */
+        padding: 6px 10px 14px 11px; /* Ajustez les espacements selon vos besoins */
+    }
+
+    /****** HEBERGEMENTS ET POPULAIRES TABLETTE ***********/
+
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .populaires-title h2 {
+        margin-bottom: -10px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;  
+    }
+
+    .populaires-cards a {
+        width: 32%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    /****** ACTIVITES A MARSEILLE TABLETTE ***********/
+
+    #marseille-list .card {
+        width: 40%;
+        height: 280px;
+    }
+
+    .marseille img {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        object-fit: cover;
+        height: 210px; 
+    }
+
+    .marseille h3 {
+        margin-top: 20px;
+    }
+    
+    /****** FOOTER TABLETTE ***********/
+
+    footer ul {
+        font-size: 15px;
+    }
+
+}
