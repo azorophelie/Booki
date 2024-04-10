@@ -1,34 +1,9 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    * {
-        font-family: 'Raleway', sans-serif;
-    }
     
-    :root {
-        --main-color: #0065FC;
-        --main-bg-color: #F2F2F2;
-        --filter-bg-color: #DEEBFF;
-    }
     
-    .fa-solid {
-        color: var(--main-color);
-    }
-    
-    body {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .main-container {
-        width: 100%;
-        max-width: 1024px;
-        min-width: 768px;
-        padding: 0 50px;
-        box-sizing: border-box;
-    }
-
      /****** RECHERCHE ET FILTRES TABLETTE ***********/
 
-     #searchForm .result {
+    #searchForm .result {
         width: 100%;
         margin-right: 20px;
         margin-top: 40px;
@@ -46,7 +21,7 @@
 
     .map-icon {
         padding: 14px 16px;
-     }
+    }
 
     .filter {
         display: flex;
@@ -61,8 +36,8 @@
     }
 
     .info .fa-info {
-        font-size: 11px; /* Ajustez la taille selon vos besoins */
-        padding: 6px 10px 14px 11px; /* Ajustez les espacements selon vos besoins */
+        font-size: 11px; 
+        padding: 6px 10px 14px 11px; 
     }
 
     /****** HEBERGEMENTS ET POPULAIRES TABLETTE ***********/
@@ -79,6 +54,7 @@
         width: 100%;
         margin-top: 50px;
     }
+
     .populaires-title h2 {
         margin-bottom: -10px;
     }
@@ -102,10 +78,13 @@
     }
 
     /****** ACTIVITES A MARSEILLE TABLETTE ***********/
-
+    
     #marseille-list .card {
         width: 40%;
         height: 280px;
+    }
+    #marseille-list {
+        margin-right: 25px;
     }
 
     .marseille img {
