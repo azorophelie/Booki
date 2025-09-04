@@ -1,7 +1,8 @@
 # Booki - Site web pour une agence de voyage 
 
-Ce projet est un site vitrine développé pour Booki, une entreprise qui souhaite permettre aux usagers de trouver facilement des hébergements et des activités dans la ville de leur choix.  
-Il a été réalisé dans le cadre de ma formation Développeur Web chez OpenClassrooms en 2024.  
+**Projet 2 de ma formation Développeur Web chez OpenClassrooms 2024**
+
+Ce projet est un site vitrine développé pour Booki, une entreprise qui souhaite permettre aux usagers de trouver facilement des hébergements et des activités dans la ville de leur choix.   
 Le projet consiste en l’intégration de l’interface à partir de maquettes fournies (desktop, tablette et mobile), en respectant les contraintes techniques définies par la CTO et l’UI designer.  
 L’objectif est d’offrir une expérience utilisateur fluide, responsive et moderne.
 
